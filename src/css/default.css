@@ -36,16 +36,19 @@ body{
 .page > aside > .newSong.active{
     background: #d4d4d4;
 }
-.page > aside > .songList{
+.page > aside > .songList-container{
+    flex-grow: 1;
+    overflow: auto;
+}
+.page > aside > .songList-container > .songList{
     border-top: 1px solid #999;
     text-align: left;
-    flex-grow: 1;
 }
-.page > aside > .songList > li{
+.page > aside > .songList-container > .songList > li{
     border-bottom: 1px solid #ddd;
     padding: 10px;
 }
-.page > aside > .songList > li.active{
+.page > aside > .songList-container > .songList > li.active{
     background: #d4d4d4;
 }
 .page > aside > .uploadArea > .dragArea{
